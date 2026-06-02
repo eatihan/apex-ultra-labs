@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TracePulse Laboratory | Apex Ultra Labs</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AUL</span>
+        <span>Apex Ultra Labs</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Vision</a>
+        <a href="laboratory.html" aria-current="page">Laboratory</a>
+        <a href="roadmap.html">Roadmap</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">The Foundation</p>
+        <h1>TracePulse Laboratory</h1>
+        <p>
+          Upload validation logs, inspect parsed event timelines, and surface
+          cascade-aware diagnosis before manual triage consumes another debug cycle.
+        </p>
+      </section>
+
+      <section class="lab-shell">
+        <div class="upload-panel">
+          <p class="eyebrow">Log intake</p>
+          <h2>Drop a hardware or firmware validation log.</h2>
+          <label class="file-drop" for="logFile">
+            <input id="logFile" type="file" accept=".log,.txt">
+            <span>Choose log file</span>
+            <small>TracePulse is designed for serial logs, packet traces, telemetry streams, and device event logs.</small>
+          </label>
+          <button id="runDemo" class="button primary" type="button" disabled aria-disabled="true">
+            Analysis Runner Disabled
+          </button>
+        </div>
+
+        <div class="analysis-panel">
+          <div class="panel-header">
+            <span>TracePulse Analysis</span>
+            <span id="analysisState">Ready</span>
+          </div>
+          <div class="analysis-grid">
+            <div>
+              <span class="stat-label">Parsed Events</span>
+              <strong id="parsedEvents">22</strong>
+            </div>
+            <div>
+              <span class="stat-label">Unparsed Lines</span>
+              <strong id="unparsedLines">0</strong>
+            </div>
+            <div>
+              <span class="stat-label">Failure Events</span>
+              <strong id="failureEvents">3</strong>
+            </div>
+          </div>
+          <div class="timeline" id="timeline">
+            <div class="timeline-item good">
+              <span>10:00:00.220</span>
+              <p>Attach Complete</p>
+            </div>
+            <div class="timeline-item warn">
+              <span>10:00:01.020</span>
+              <p>Repeated PRACH attempts detected</p>
+            </div>
+            <div class="timeline-item fail">
+              <span>10:00:01.025</span>
+              <p>Root cause: RACH Failure, max preamble transmissions reached</p>
+            </div>
+            <div class="timeline-item ripple">
+              <span>10:00:01.030</span>
+              <p>Ripple effect: controller rejected the recovery sequence</p>
+            </div>
+            <div class="timeline-item ripple">
+              <span>10:00:01.050</span>
+              <p>Ripple effect: EMM Attach Reject, cause 15</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Apex Ultra Labs, owned by Apex Ultra LLC</span>
+      <span>TracePulse is the first module in the autonomous validation stack.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

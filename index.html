@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apex Ultra Labs | Autonomous Validation Infrastructure</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Apex Ultra Labs home">
+        <span class="brand-mark">AUL</span>
+        <span>Apex Ultra Labs</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Vision</a>
+        <a href="laboratory.html">Laboratory</a>
+        <a href="roadmap.html">Roadmap</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <canvas id="packetCanvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+          <p class="eyebrow">Closed-loop validation intelligence</p>
+          <h1>Apex Ultra Labs: Orchestrating Autonomous Validation Infrastructure.</h1>
+          <p class="hero-copy">
+            We are building the infrastructure for next-generation system validation.
+            By replacing manual triage with closed-loop, AI-driven intelligence, we are
+            reducing development cycles from weeks to hours.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="laboratory.html">Open TracePulse Lab</a>
+            <a class="button secondary" href="#ecosystem">Explore Platform</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Live validation status">
+          <div class="panel-header">
+            <span>Autonomous Lab Status</span>
+            <span class="status-dot"></span>
+          </div>
+          <dl class="metric-grid">
+            <div>
+              <dt>Failure Triage</dt>
+              <dd>12s</dd>
+            </div>
+            <div>
+              <dt>Event Chain</dt>
+              <dd>State/IO</dd>
+            </div>
+            <div>
+              <dt>Regression Gate</dt>
+              <dd>Active</dd>
+            </div>
+            <div>
+              <dt>Evidence Map</dt>
+              <dd>Specs</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section intro-band">
+        <div>
+          <p class="eyebrow">Platform vision</p>
+          <h2>The Autonomous Engineering Lab</h2>
+        </div>
+        <p>
+          Apex Ultra Labs connects validation telemetry, event-stream intelligence,
+          generative scenario design, KPI benchmarking, and compliance mapping into
+          one operating layer for embedded, automotive, IoT, industrial, and networked systems teams.
+        </p>
+      </section>
+
+      <section id="ecosystem" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Platform architecture</p>
+          <h2>One ecosystem for the full validation loop.</h2>
+        </div>
+
+        <div class="ecosystem-grid">
+          <article class="pillar-card active" data-pillar="tracepulse">
+            <span class="card-kicker">Foundation</span>
+            <h3>TracePulse</h3>
+            <p>
+              The triage engine parses event streams, identifies failure cascades, and
+              delivers root-cause analysis in seconds.
+            </p>
+            <ul>
+              <li>State-machine timeline parsing</li>
+              <li>Cascade-aware root cause isolation</li>
+              <li>Engineer-ready action summaries</li>
+            </ul>
+          </article>
+
+          <article class="pillar-card" data-pillar="scenarioforge">
+            <span class="card-kicker">Next-gen pillar</span>
+            <h3>ScenarioForge</h3>
+            <p>
+              Generative proactive testing explores corner-case state-machine
+              traversal for complex embedded and connected devices.
+            </p>
+            <ul>
+              <li>AI-authored stress paths</li>
+              <li>Corner-case state traversal</li>
+              <li>Replayable validation campaigns</li>
+            </ul>
+          </article>
+
+          <article class="pillar-card" data-pillar="assurance">
+            <span class="card-kicker">Assurance layer</span>
+            <h3>Performance & Compliance</h3>
+            <p>
+              PerformancePulse tracks KPI regressions while SpecSentinel maps
+              failures back to requirements, interface contracts, and specification sections.
+            </p>
+            <ul>
+              <li>Automated KPI benchmarking</li>
+              <li>Continuous compliance auditing</li>
+              <li>Release gate evidence packs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section demo-section">
+        <div class="demo-copy">
+          <p class="eyebrow">TracePulse hook</p>
+          <h2>The terminal should know what failed before the team meeting starts.</h2>
+          <p>
+            TracePulse reads the event stream the way a senior validation engineer
+            does: earliest fault first, downstream rejects second, corrective action
+            always attached.
+          </p>
+          <a class="text-link" href="laboratory.html">Try the laboratory interface</a>
+        </div>
+        <div class="terminal" aria-label="TracePulse terminal demo">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+            <strong>tracepulse cascade monitor</strong>
+          </div>
+          <pre id="terminalFeed"></pre>
+        </div>
+      </section>
+
+      <section class="section standards">
+        <p class="eyebrow">Industry standards</p>
+        <div class="standard-bar" aria-label="Supported validation domains">
+          <span>Embedded Systems</span>
+          <span>Automotive</span>
+          <span>IoT</span>
+          <span>Industrial</span>
+          <span>Fieldbus</span>
+          <span>Device Logs</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Apex Ultra Labs, owned by Apex Ultra LLC</span>
+      <span>Autonomous validation intelligence for complex engineering systems.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
