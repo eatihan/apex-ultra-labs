@@ -121,3 +121,13 @@ if (logFile) {
     markAnalyzed(file ? file.name : "Analyzed");
   });
 }
+
+const contactAction = document.getElementById("contactAction");
+
+if (contactAction) {
+  const local = contactAction.dataset.local;
+  const domain = contactAction.dataset.domain;
+  const destination = `${local}@${domain}`;
+  contactAction.href = `mailto:${destination}?subject=Apex%20Ultra%20Labs%20Inquiry`;
+  contactAction.setAttribute("aria-label", "Email Apex Ultra Labs");
+}
