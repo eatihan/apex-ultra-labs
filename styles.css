@@ -296,6 +296,29 @@ dd,
   margin-top: 36px;
 }
 
+.entity-section {
+  background: #081416;
+  border-bottom: 1px solid var(--line);
+}
+
+.entity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.entity-grid article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.entity-grid p {
+  color: #c1d0d2;
+}
+
 .pillar-card {
   min-height: 360px;
   padding: 24px;
@@ -628,7 +651,8 @@ pre {
   }
 
   .ecosystem-grid,
-  .standard-bar {
+  .standard-bar,
+  .entity-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -656,6 +680,7 @@ pre {
   .metric-grid,
   .analysis-grid,
   .ecosystem-grid,
+  .entity-grid,
   .standard-bar {
     grid-template-columns: 1fr;
   }
