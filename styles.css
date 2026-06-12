@@ -465,6 +465,41 @@ pre {
   padding: clamp(28px, 5vw, 72px);
 }
 
+.lab-seo-section {
+  padding-top: clamp(48px, 7vw, 88px);
+  padding-bottom: clamp(48px, 7vw, 88px);
+  background: var(--bg);
+}
+
+.lab-seo-section.alternate {
+  background: var(--bg-2);
+  border-top: 1px solid var(--line);
+}
+
+.lab-seo-section > p {
+  max-width: 960px;
+  color: #c1d0d2;
+  font-size: 20px;
+}
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.capability-grid article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.capability-grid p {
+  color: #c1d0d2;
+}
+
 .upload-panel,
 .analysis-panel {
   padding: 24px;
@@ -652,7 +687,8 @@ pre {
 
   .ecosystem-grid,
   .standard-bar,
-  .entity-grid {
+  .entity-grid,
+  .capability-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -681,6 +717,7 @@ pre {
   .analysis-grid,
   .ecosystem-grid,
   .entity-grid,
+  .capability-grid,
   .standard-bar {
     grid-template-columns: 1fr;
   }
